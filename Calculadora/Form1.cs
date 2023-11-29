@@ -78,6 +78,30 @@ namespace Calculadora
 
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "SUB";
+            lblOperacao.Text = "-";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "MULT";
+            lblOperacao.Text = "x";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "DIV";
+            lblOperacao.Text = "/";
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
