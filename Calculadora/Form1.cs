@@ -76,6 +76,33 @@ namespace Calculadora
             valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
             Operacoes operacoes = new Operacoes(valor1, valor2);
 
+            switch (operacao)
+            {
+                case "SOMA":
+                    {
+                        txtResultado.Text = operacoes.Adicao().ToString();
+                        break;
+                    }
+                case "SUB":
+                    {
+                        txtResultado.Text = operacoes.Subtracao().ToString();
+                        break;
+                    }
+                case "MULT":
+                    {
+                        txtResultado.Text = operacoes.Multiplicacao().ToString();
+                        break;
+                    }
+                case "DIV":
+                    {
+                        txtResultado.Text = operacoes.Divisao().ToString();
+                        break;
+                    }
+                default:
+                    txtResultado.Text = "Erro";
+                    break;
+            }
+
         }
 
         private void button7_Click(object sender, EventArgs e)
