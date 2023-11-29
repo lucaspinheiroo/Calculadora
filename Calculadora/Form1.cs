@@ -129,6 +129,16 @@ namespace Calculadora
             lblOperacao.Text = "/";
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = "";
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += ".";
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
