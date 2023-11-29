@@ -139,6 +139,14 @@ namespace Calculadora
             txtResultado.Text += ".";
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "";
+            valor1 = 0;
+            valor2 = 0;
+            lblOperacao.Text = "";
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
